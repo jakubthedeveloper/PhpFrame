@@ -12,7 +12,8 @@ composer require jakub-the-developer/php-frame
 
 ## Default configuration
 ```php
-$frame = new Frame(
+
+$frame = new \JakubTheDeveloper\PhpFrame\Frame(
     [
         "First line of the text",
         "Second line of the text",
@@ -44,7 +45,7 @@ Screenshot:
 ## Custom configuration
 
 ```php
-$configuration = new FrameConfiguration(
+$configuration = new \JakubTheDeveloper\PhpFrame\FrameConfiguration(
     1, // top margin lines
     3, // bottom margin lines
     26, // margin left
@@ -57,7 +58,7 @@ $configuration = new FrameConfiguration(
     '|' // vertical border symbol
 );
 
-$frame = new Frame(
+$frame = new \JakubTheDeveloper\PhpFrame\Frame(
     [
         "First, longer line of the text",
         "Second line",
