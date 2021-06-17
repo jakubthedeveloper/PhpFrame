@@ -2,6 +2,8 @@
 
 namespace JakubTheDeveloper\PhpFrame;
 
+use JakubTheDeveloper\PhpFrame\Exception\InvalidConfigurationException;
+
 class FrameConfiguration
 {
     private int $marginLinesTop;
@@ -64,6 +66,22 @@ class FrameConfiguration
 
         if (mb_strlen($this->topLeftCornerSymbol) !== 1) {
             $errors[] = 'Top left corner symbol must be only one character.';
+        }
+
+        if (mb_strlen($this->topRightCornerSymbol) !== 1) {
+            $errors[] = 'Top right corner symbol must be only one character.';
+        }
+
+        if (mb_strlen($this->bottomLeftCornerSymbol) !== 1) {
+            $errors[] = 'Bottom left corner symbol must be only one character.';
+        }
+
+        if (mb_strlen($this->bottomRightCornerSymbol) !== 1) {
+            $errors[] = 'Bottom right corner symbol must be only one character.';
+        }
+
+        if (count($errors) > 0) {
+            throw new InvalidConfigurationException(json_encode($errors));
         }
     }
 

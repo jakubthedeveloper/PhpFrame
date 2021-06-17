@@ -35,7 +35,7 @@ class Frame
         $output .= $this->drawEmptyLines($this->configuration->getMarginLinesBottom());
 
         $output .=  $this->drawBottomBorder();
-echo $output . "\n"; die();
+
         return $output;
     }
 
