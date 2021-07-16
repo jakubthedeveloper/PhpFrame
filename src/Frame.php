@@ -35,6 +35,7 @@ class Frame
         $output .= $this->drawEmptyLines($this->configuration->getMarginLinesBottom());
 
         $output .=  $this->drawBottomBorder();
+        $output .= PHP_EOL;
 
         return $output;
     }
@@ -56,7 +57,7 @@ class Frame
 
         return $this->configuration->getTopLeftCornerSymbol() .
                str_repeat($this->configuration->getHorizontalBorderSymbol(), $length) .
-               $this->configuration->getTopRightCornerSymbol() . "\n";
+               $this->configuration->getTopRightCornerSymbol() . PHP_EOL;
     }
 
     private function drawBottomBorder(): string
@@ -74,7 +75,7 @@ class Frame
 
         for($i = 0; $i < $number; $i++) {
             $length = $this->longestTextLength + $this->configuration->getMarginLeft() + $this->configuration->getMarginRight();
-            $output .= $this->configuration->getVerticalBorderSymbol() . str_repeat(' ', $length) . $this->configuration->getVerticalBorderSymbol() . "\n";
+            $output .= $this->configuration->getVerticalBorderSymbol() . str_repeat(' ', $length) . $this->configuration->getVerticalBorderSymbol() . PHP_EOL;
         }
 
         return $output;
@@ -91,7 +92,7 @@ class Frame
         $output .= $text;
         $output .= str_repeat(' ', $padRight);
         $output .= str_repeat(' ', $this->configuration->getMarginRight());
-        $output .= $this->configuration->getVerticalBorderSymbol() . "\n";
+        $output .= $this->configuration->getVerticalBorderSymbol() . PHP_EOL;
 
         return $output;
     }

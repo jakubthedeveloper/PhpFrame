@@ -12,6 +12,26 @@ To install this package you have to use `composer 2`.
 composer require jakub-the-developer/php-frame
 ```
 
+# Usage
+
+```php
+<?php
+require './vendor/autoload.php';
+
+use JakubTheDeveloper\PhpFrame\Frame;
+
+
+$frame = new Frame(
+    [
+        "First line of the text",
+        "Second line of the text",
+        "© Copyright information",
+    ]
+);
+
+echo $frame->draw();
+```
+
 # Examples
 
 ## Default configuration
@@ -25,7 +45,7 @@ $frame = new \JakubTheDeveloper\PhpFrame\Frame(
     ]
 );
 
-$frame->draw();
+echo $frame->draw();
 ```
 
 Result:
