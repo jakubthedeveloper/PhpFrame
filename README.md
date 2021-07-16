@@ -4,6 +4,10 @@ PHP library for drawing a frame around lines of text.
 
 # Installation
 
+## Requirements
+To install this package you have to use `composer 2`.
+
+## Install
 ```shell
 composer require jakub-the-developer/php-frame
 ```
