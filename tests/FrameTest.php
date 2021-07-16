@@ -31,6 +31,7 @@ class FrameTest extends TestCase
 ║                                       ║
 ║                                       ║
 ╚═══════════════════════════════════════╝
+
 Frame;
 
         $this->assertEquals($expectedOutput, $frame->draw());
@@ -70,6 +71,7 @@ Frame;
 |                                                                                  |
 |                                                                                  |
 +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+
 Frame;
 
         $this->assertEquals($expectedOutput, $frame->draw());
