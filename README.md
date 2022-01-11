@@ -109,3 +109,16 @@ Result:
 Screenshot:
 
 ![PhpFrame - Console output - second example](screenshots/2.png)
+
+## Run tests
+
+
+```
+./vendor/bin/phpunit
+```
+
+with code coverage (html):
+
+```
+./vendor/bin/phpunit --coverage-html coverage
+```

@@ -8,6 +8,7 @@ use PHPUnit\Framework\TestCase;
  * Class FrameTest
  * @package JakubTheDeveloper\PhpFrame
  * @covers \JakubTheDeveloper\PhpFrame\Frame
+ * @covers \JakubTheDeveloper\PhpFrame\FrameConfiguration
  */
 class FrameTest extends TestCase
 {
