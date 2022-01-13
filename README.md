@@ -1,3 +1,5 @@
+![Build status](https://github.com/jakubthedeveloper/PhpFrame/actions/workflows/php.yml/badge.svg)
+
 # About
 
 PHP library for drawing a frame around lines of text. 
